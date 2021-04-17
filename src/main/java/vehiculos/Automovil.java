@@ -12,12 +12,11 @@ public class Automovil extends Vehiculo {
 		cantidadAutomoviles++;
 	}
 	
-	public Automovil(String placa, String nombre, int velmax,
-			int peso, Fabricante fabricante, int puertas){
+	public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puertas){
 		super(4, 100, "FWD");
 		this.placa = placa;
 		this.nombre = nombre;
-		this.velocidadMaxima = velmax;
+		this.precio = precio;
 		this.peso = peso;
 		this.fabricante = fabricante;
 		this.puertas = puertas;
