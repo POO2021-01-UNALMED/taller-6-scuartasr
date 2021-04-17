@@ -11,7 +11,23 @@ public class Vehiculo {
 	Fabricante fabricante;
 	static int cantidadVehiculos;
 	
-	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+	// ==================================================
+	// Constructores
+	
+	Vehiculo(int puertas, int velocidadMaxima, String traccion) {
+		this.puertas = puertas;
+		this.velocidadMaxima = velocidadMaxima;
+		this.traccion = traccion;	
+		cantidadVehiculos++;
+	}
+	
+	Vehiculo(int velocidadMaxima, String traccion) {
+		this(0, velocidadMaxima, traccion);
+	}
+	
+	public Vehiculo(String placa, int puertas, int velocidadMaxima,
+			String nombre, int precio, int peso, String traccion,
+			Fabricante fabricante) {
 		this.placa = placa;
 		this.puertas = puertas;
 		this.velocidadMaxima = velocidadMaxima;
@@ -20,18 +36,31 @@ public class Vehiculo {
 		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
+		if (Fabricante.fabricas.contains(fabricante)) {
+			Fabricante.fabricas.add(fabricante);
+		}
+		fabricante.carrosFabrica++;
 	}
 	
-	Vehiculo(int velocidadMaxima, String traccion) {
-		this(0, velocidadMaxima, traccion);
+	// ==================================================
+	// Métodos
+	
+	public static int getCantidadVehiculos() {
+		return cantidadVehiculos;
 	}
 	
-	Vehiculo(int puertas, int velocidadMaxima, String traccion) {
-		this.puertas = puertas;
-		this.velocidadMaxima = velocidadMaxima;
-		this.traccion = traccion;	
-		cantidadVehiculos++;
+	public String vehiculosPorTipo() {
+		int numAuto = Automovil.cantidadAutomoviles;
+		int numCam = Camioneta.cantidadCamionetas;
+		int numCnes = Camion.cantidadCamiones;
+		return "Automoviles: " + numAuto + "\n" +
+				"Camionetas: " + numCam + "\n" +
+				"Camiones: " + numCnes;
 	}
+	
+	// ==================================================
+	// Constructores
+
 
 	public String getPlaca() {
 		return placa;
@@ -97,12 +126,10 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 	}
 
-	public static int getCantidadVehiculos() {
-		return cantidadVehiculos;
-	}
-
 	public static void setCantidadVehiculos(int cantidadVehiculos) {
 		Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
-
+	
+	
+	
 }
