@@ -4,17 +4,7 @@ public class Camioneta extends Vehiculo {
 	boolean volco;
 	static int cantidadCamionetas;
 	
-	// ==================================================
-	// Constructor
-	
-	public Camioneta() {
-		super(90, "4X4");
-		cantidadCamionetas++;
-	}
-	
-	public Camioneta(String placa, int puertas, String nombre,
-			int velmax, int peso, Fabricante fabricante,
-			boolean volco) {
+	public Camioneta(String placa, int puertas, String nombre, int velmax, int peso, Fabricante fabricante, boolean volco) {
 		super(90, "4X4");
 		this.placa = placa;
 		this.puertas = puertas;
@@ -24,10 +14,6 @@ public class Camioneta extends Vehiculo {
 		this.fabricante = fabricante;
 		cantidadCamionetas++;
 	}
-	
-	// ==================================================
-	// Getters y setters
-
 
 	public boolean isVolco() {
 		return volco;
@@ -36,7 +22,13 @@ public class Camioneta extends Vehiculo {
 	public void setVolco(boolean volco) {
 		this.volco = volco;
 	}
-	
-	
-	
+
+	public static int getCantidadCamionetas() {
+		return cantidadCamionetas;
+	}
+
+	public static void setCantidadCamionetas(int cantidadCamionetas) {
+		Camioneta.cantidadCamionetas = cantidadCamionetas;
+	}
+
 }

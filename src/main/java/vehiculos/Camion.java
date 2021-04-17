@@ -4,17 +4,7 @@ public class Camion extends Vehiculo {
 	int ejes;
 	static int cantidadCamiones;
 	
-	// ==================================================
-	// Constructor
-	
-	public Camion() {
-		super(2, 80, "4X2");
-		cantidadCamiones++;
-	}
-	
-	public Camion(String placa, String nombre,
-			int precio, int velmax, Fabricante fabricante,
-			int puertas) {
+	public Camion(String placa, String nombre, int precio, int velmax, Fabricante fabricante, int puertas) {
 		super(2, 80, "4X2");
 		this.placa = placa;
 		this.nombre = nombre;
@@ -24,10 +14,6 @@ public class Camion extends Vehiculo {
 		this.puertas = puertas;
 		cantidadCamiones++;
 	}
-	
-	// ==================================================
-	// Gwtters y setters
-
 
 	public int getEjes() {
 		return ejes;
@@ -35,5 +21,14 @@ public class Camion extends Vehiculo {
 
 	public void setEjes(int ejes) {
 		this.ejes = ejes;
-	}	
+	}
+
+	public static int getCantidadCamiones() {
+		return cantidadCamiones;
+	}
+
+	public static void setCantidadCamiones(int cantidadCamiones) {
+		Camion.cantidadCamiones = cantidadCamiones;
+	}
+
 }
