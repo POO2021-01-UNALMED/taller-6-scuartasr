@@ -23,17 +23,21 @@ public class Fabricante {
 		this.nombre = "N.A.";
 	}
 	
-	// ====================
+	// =================================================
 	// Métodos
 	
 	public static Fabricante fabricaMayorVentas() {
 		int max = 0;
 		Fabricante masvendedor = new Fabricante();
+		
+		// Obtener el número de carros por la fábrica que más carros produjo
 		for(Fabricante fabrica : fabricas) {
 			if(fabrica.carrosFabrica > max) {
 				max = fabrica.carrosFabrica;
 			}
 		}
+		
+		// Identificar cuál es esa fábrica
 		for(Fabricante fabrica : fabricas) {
 			if (max == fabrica.carrosFabrica) {
 				masvendedor = fabrica;
@@ -44,7 +48,7 @@ public class Fabricante {
 	
 
 	// ==================================================
-	// Constructores
+	// Getters y setters
 
 	public String getNombre() {
 		return nombre;

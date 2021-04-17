@@ -22,8 +22,7 @@ public class Vehiculo {
 	}
 	
 	Vehiculo(int velocidadMaxima, String traccion) {
-		this.velocidadMaxima = velocidadMaxima;
-		this.traccion = traccion;
+		this(0, velocidadMaxima, traccion);
 		cantidadVehiculos++;
 	}
 	
