@@ -24,6 +24,7 @@ public class Vehiculo {
 	Vehiculo(int velocidadMaxima, String traccion) {
 		this.velocidadMaxima = velocidadMaxima;
 		this.traccion = traccion;
+		cantidadVehiculos++;
 	}
 	
 	public Vehiculo(String placa, int puertas, int velocidadMaxima,	String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
