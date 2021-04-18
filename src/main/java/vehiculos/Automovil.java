@@ -33,5 +33,6 @@ public class Automovil extends Vehiculo {
 
 	public void setPuestos(int puestos) {
 		this.puestos = puestos;
-	}	
+	}
+	// ENSAYO PARA PROBAR QUE TOOODO ESTÉ BIEN EN GITHUB
 }
