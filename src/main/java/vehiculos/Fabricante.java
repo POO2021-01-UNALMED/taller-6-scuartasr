@@ -30,7 +30,7 @@ public class Fabricante {
 		int max = 0;
 		Fabricante masvendedor = new Fabricante();
 		
-		// Obtener el numero de carros por la fábrica que más carros produjo
+		// Obtener el numero de carros por la Fabrica que mas carros produjo
 		for(Fabricante fabrica : fabricas) {
 			if(fabrica.carrosFabrica > max) {
 				max = fabrica.carrosFabrica;
