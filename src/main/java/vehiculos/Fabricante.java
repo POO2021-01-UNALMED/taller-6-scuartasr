@@ -8,7 +8,7 @@ public class Fabricante {
 	static Vector<Fabricante> fabricas = new Vector<>();
 	
 	// ====================
-	// Constructores
+	// CONSTRUCTORES
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
@@ -24,20 +24,20 @@ public class Fabricante {
 	}
 	
 	// =================================================
-	// Métodos
+	// METODOS
 	
 	public static Fabricante fabricaMayorVentas() {
 		int max = 0;
 		Fabricante masvendedor = new Fabricante();
 		
-		// Obtener el número de carros por la fábrica que más carros produjo
+		// Obtener el numero de carros por la fábrica que más carros produjo
 		for(Fabricante fabrica : fabricas) {
 			if(fabrica.carrosFabrica > max) {
 				max = fabrica.carrosFabrica;
 			}
 		}
 		
-		// Identificar cuál es esa fábrica
+		// Identificar cual es esa fábrica
 		for(Fabricante fabrica : fabricas) {
 			if (max == fabrica.carrosFabrica) {
 				masvendedor = fabrica;
@@ -48,7 +48,7 @@ public class Fabricante {
 	
 
 	// ==================================================
-	// Getters y setters
+	// GETTERS Y SETTERS
 
 	public String getNombre() {
 		return nombre;

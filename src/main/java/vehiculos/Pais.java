@@ -7,7 +7,7 @@ public class Pais {
 	static Vector<Pais> paises = new Vector<>();
 	
 	// ==================================================
-	// Constructores
+	// CONSTRUCTORES
 
 	public Pais(String nombre) {
 		this.nombre = nombre;
@@ -29,20 +29,20 @@ public class Pais {
 	}
 	
 	// =================================================
-	// Métodos
+	// METODOS
 	
 	public static Pais paisMasVendedor() {
 		int max = 0;
 		Pais masvendedor = new Pais();
 		
-		// Tomar la cantidad del país con más carros en país.
+		// Tomar la cantidad del pais con mas carros en pais.
 		for(Pais pais : paises) {
 			if(pais.carrosPais > max) {
 				max = pais.carrosPais;
 			}
 		}
 		
-		// Buscar cuál es ese país con mayor cantidad de carros
+		// Buscar cual es ese pais con mayor cantidad de carros
 		for(Pais pais : paises) {
 			if (max == pais.carrosPais) {
 				masvendedor = pais;

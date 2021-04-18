@@ -5,7 +5,7 @@ public class Camioneta extends Vehiculo {
 	static int cantidadCamionetas;
 	
 	// ==================================================
-	// Constructor
+	// CONSTRUCTOR
 	
 	public Camioneta() {
 		super(90, "4X4");
@@ -24,7 +24,7 @@ public class Camioneta extends Vehiculo {
 	}
 	
 	// ==================================================
-	// Getters y setters
+	// GETTERS Y SETTERS
 
 
 	public boolean isVolco() {

@@ -12,7 +12,7 @@ public class Vehiculo {
 	static int cantidadVehiculos;
 	
 	// ==================================================
-	// Constructores
+	// CONSTRUCTORES
 	
 	Vehiculo(int puertas, int velocidadMaxima, String traccion) {
 		this.puertas = puertas;
@@ -41,7 +41,7 @@ public class Vehiculo {
 	}
 	
 	// ==================================================
-	// Métodos
+	// METODOS
 	
 	public static int getCantidadVehiculos() {
 		return cantidadVehiculos;
@@ -57,7 +57,7 @@ public class Vehiculo {
 	}
 	
 	// ==================================================
-	// Constructores
+	// CONSTRUCTORES
 
 
 	public String getPlaca() {

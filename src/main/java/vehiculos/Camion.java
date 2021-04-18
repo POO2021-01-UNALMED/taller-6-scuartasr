@@ -5,7 +5,7 @@ public class Camion extends Vehiculo {
 	static int cantidadCamiones;
 	
 	// ==================================================
-	// Constructores
+	// CONSTRUCTORES
 	
 	public Camion() {
 		super(2, 80, "4X2");
@@ -24,7 +24,7 @@ public class Camion extends Vehiculo {
 	}
 	
 	// ==================================================
-	// Gwtters y setters
+	// GETTERS Y SETTERS
 
 
 	public int getEjes() {

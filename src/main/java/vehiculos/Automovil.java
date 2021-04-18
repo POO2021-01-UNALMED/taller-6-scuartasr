@@ -5,7 +5,7 @@ public class Automovil extends Vehiculo {
 	static int cantidadAutomoviles;
 	
 	// ==================================================
-	// Constructores
+	// CONSTRUCTORES
 	
 	public Automovil() {
 		super(4, 100, "FWD");
@@ -24,7 +24,7 @@ public class Automovil extends Vehiculo {
 	}
 	
 	// ==================================================
-	// Getters y setters
+	// GETTERS Y SETTERS
 
 
 	public int getPuestos() {
@@ -34,5 +34,4 @@ public class Automovil extends Vehiculo {
 	public void setPuestos(int puestos) {
 		this.puestos = puestos;
 	}
-	// ENSAYO PARA PROBAR QUE TOOODO ESTÉ BIEN EN GITHUB
 }
