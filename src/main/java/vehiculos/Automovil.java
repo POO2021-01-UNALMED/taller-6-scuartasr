@@ -19,6 +19,7 @@ public class Automovil extends Vehiculo {
 		this.precio = precio;
 		this.peso = peso;
 		this.fabricante = fabricante;
+		fabricante.carrosFabrica++;
 		this.puertas = puertas;
 		cantidadAutomoviles++;
 	}

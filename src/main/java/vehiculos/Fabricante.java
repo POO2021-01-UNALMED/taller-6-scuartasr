@@ -13,14 +13,8 @@ public class Fabricante {
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
 		this.pais = pais;
-		if(Pais.paises.contains(pais)) {
-			Pais.paises.add(pais);
-		}
 		pais.carrosPais++;
-	}
-	
-	public Fabricante() {
-		this.nombre = "N.A.";
+		fabricas.add(this);
 	}
 	
 	// =================================================
@@ -28,7 +22,7 @@ public class Fabricante {
 	
 	public static Fabricante fabricaMayorVentas() {
 		int max = 0;
-		Fabricante masvendedor = new Fabricante();
+		Fabricante masvendedor = null;
 		
 		// Obtener el numero de carros por la Fabrica que mas carros produjo
 		for(Fabricante fabrica : fabricas) {

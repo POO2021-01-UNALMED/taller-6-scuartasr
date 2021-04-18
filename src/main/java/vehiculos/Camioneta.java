@@ -19,6 +19,7 @@ public class Camioneta extends Vehiculo {
 		this.nombre = nombre;
 		this.peso = peso;
 		this.fabricante = fabricante;
+		fabricante.carrosFabrica++;
 		this.volco = volco;
 		cantidadCamionetas++;
 	}

@@ -33,10 +33,7 @@ public class Vehiculo {
 		this.precio = precio;
 		this.peso = peso;
 		this.traccion = traccion;
-		this.fabricante = fabricante;
-		if (Fabricante.fabricas.contains(fabricante)) {
-			Fabricante.fabricas.add(fabricante);
-		}
+		this.fabricante = fabricante;		
 		fabricante.carrosFabrica++;
 	}
 	

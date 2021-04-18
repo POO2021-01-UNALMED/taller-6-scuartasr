@@ -19,6 +19,7 @@ public class Camion extends Vehiculo {
 		this.precio = precio;
 		this.peso = peso;
 		this.fabricante = fabricante;
+		fabricante.carrosFabrica++;
 		this.ejes = ejes;
 		cantidadCamiones++;
 	}

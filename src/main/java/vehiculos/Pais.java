@@ -11,10 +11,7 @@ public class Pais {
 
 	public Pais(String nombre) {
 		this.nombre = nombre;
-	}
-	
-	public Pais() {
-		this.nombre = "N.A.";
+		paises.add(this);
 	}
 	
 	// ==================================================
@@ -33,7 +30,7 @@ public class Pais {
 	
 	public static Pais paisMasVendedor() {
 		int max = 0;
-		Pais masvendedor = new Pais();
+		Pais masvendedor = paises.get(0);
 		
 		// Tomar la cantidad del pais con mas carros en pais.
 		for(Pais pais : paises) {
