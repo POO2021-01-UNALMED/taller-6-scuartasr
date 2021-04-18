@@ -37,7 +37,7 @@ public class Fabricante {
 			}
 		}
 		
-		// Identificar cual es esa fábrica
+		// Identificar cual es esa fabrica
 		for(Fabricante fabrica : fabricas) {
 			if (max == fabrica.carrosFabrica) {
 				masvendedor = fabrica;
